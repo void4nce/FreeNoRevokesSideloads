@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Button with Lighting Effect</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #121212;
+      font-family: 'Gotham', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .text-button {
+      background: none;
+      border: none;
+      color: #a76fc7; /* Purple */
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.3), /* subtle white light */
+        0 0 15px rgba(255, 255, 255, 0.5), /* brighter white */
+        0 0 30px rgba(255, 255, 255, 0.7), /* strong white glow */
+        0 0 60px rgba(255, 255, 255, 1),   /* intense white glow */
+        0 0 100px rgba(255, 255, 255, 0.7), 
+        0 0 150px rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .text-button:hover {
+      text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 30px rgba(255, 255, 255, 0.7),
+        0 0 50px rgba(255, 255, 255, 1),
+        0 0 100px rgba(255, 255, 255, 0.8);
+    }
+
+    .text-button:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="text-button" onclick="handleClick()">Click Me</button>
+  </div>
+
+  <script>
+    function handleClick() {
+      window.location.href = "https://discord.gg/uQSq6XcQ6h";
+    }
+  </script>
+</body>
+</html>
